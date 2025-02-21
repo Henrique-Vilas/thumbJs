@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbnail Preview</title>
+    <link rel="stylesheet" href="interface.css">
+</head>
+
+<body>
+
+    <div class="div1">
+        <h1>VISUALIZE SUA <br>THUMBNAIL!</h1>
+        <p>Já imaginou como seria sua thumbnail na página principal do YouTube?<br>
+            Descubra agora!</p>
+    </div>
+
+    <div class="box">
+        <h2>Upload Thumbnail</h2>
+        <p>Por favor, envie o arquivo no formato JPEG ou PNG e certifique-se de que o tamanho do arquivo seja inferior a 2MB.</p>
+    </div>
+
+    <!-- Quadrado vermelho onde a imagem será carregada -->
+    <div class="box1">
+        <div id="dropArea" class="drop-area">
+            <h3>Drop file or browse</h3>
+            <p>Format: .jpeg ou .png & Max file size: 2 MB</p>
+        </div>
+        <button id="arq"><b>Browse Files</b></button>
+        <input type="file" id="fileInput" accept="image/png, image/jpeg" style="display: none;">
+    </div>
+
+    <div class="div4"><button id="Cancelar"><b>Cancelar</b></button></div>
+    <div class="div5"><button><b>Concluir</b></button></div>
+
+    <!-- Imagens de fundo (mantidas) -->
+    <div class="div7">
+        <img src="fundo_padrao.png" alt="Imagem de Fundo">
+    </div>
+
+    <div class="div8">
+        <img src="fundobranco.png" alt="Imagem de fundo secundária">
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
