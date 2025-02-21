@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 img.style.borderRadius = "10px";
                 dropArea.appendChild(img);
 
-                // 🔥 Esconde o botão "Browse Files"
                 browseButton.style.display = "none";
             };
 
@@ -35,8 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     cancelButton.addEventListener("click", function () {
-        fileInput.value = ""; // Reseta o input
+        fileInput.value = ""; 
         dropArea.innerHTML = "<h3>Drop file or browse</h3><p>Format: .jpeg ou .png & Max file size: 2 MB</p>"; // Restaura o texto original
-        browseButton.style.display = "block"; // 🔥 Mostra o botão novamente
+        browseButton.style.display = "block"; 
     });
 });
